@@ -27,7 +27,7 @@ session_start();
         <input type="submit" value="/" name="Sub">
         <br><br>
         <label for="Result">Result: </label>
-        <input type="number" name="Result" value="55">
+        <p style="border: 2px solid black; width:100px ;display:inline-block ;margin-left:15px ;color:red"><?php echo $_SESSION['Opp'] ?></p>
     </form>
 </body>
 </html>
