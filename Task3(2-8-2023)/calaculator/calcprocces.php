@@ -22,6 +22,6 @@ if(isset($_GET['Number1']) && isset($_GET['Number2']) && $_GET['Number1'] !== ""
         exit;
     }
 }else{
-    echo "You Should insert a numbers.<br> <a href='http://localhost/PHP-Tasks/Tasks3(2-8-2023)/calaculator/calculator.php'>Return To The Calculator.</a>";
+    echo "You Should insert a numbers.<br> <a href='http://localhost/PHP-Tasks/Task3(2-8-2023)/calaculator/calculator.php'>Return To The Calculator.</a>";
 }  
 ?>

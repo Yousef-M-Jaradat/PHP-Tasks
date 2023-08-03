@@ -7,6 +7,6 @@ if (isset($_GET['username']) && isset($_GET['password']) && $_GET['username'] !=
     exit;
 }else {
     // Invalid credentials, show an error message
-    echo "Invalid username or password. <a href='http://localhost/PHP-Tasks/Tasks3(2-8-2023)/calaculator/calcLogin.php'>Please try again.</a>";
+    echo "Invalid username or password. <a href='http://localhost/PHP-Tasks/Task3(2-8-2023)/calaculator/Login.php'>Please try again.</a>";
 }
 ?>

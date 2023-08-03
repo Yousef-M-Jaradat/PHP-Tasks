@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="get" action="procced.php">
+    <form method="get" action="Loginproccess.php">
         <label for="username">Username: </label>
         <input type="text" name="username">
         <br><br>
