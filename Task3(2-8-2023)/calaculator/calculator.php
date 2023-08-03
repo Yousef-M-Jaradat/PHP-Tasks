@@ -1,10 +1,9 @@
 <?php
 session_start();
 
-    echo "<h1>Welcome, ".$_SESSION['username']."</h1><br><br>";
+echo "<h1>Welcome, ".$_SESSION['username']."</h1><br><br>";
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +13,7 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-<form method="get" action="calcprocces.php">
+    <form method="get" action="calcprocces.php">
         <label for="Number1">Number1: </label>
         <input type="number" name="Number1">
         <br><br>
@@ -27,10 +26,23 @@ session_start();
         <input type="submit" value="/" name="Sub">
         <br><br>
         <label for="Result">Result: </label>
-        <p style="border: 2px solid black; width:100px ;display:inline-block ;margin-left:15px ;color:red"><?php echo $_SESSION['Opp'] ?></p>
+        <p style="border: 2px solid black; width:150px ;display:inline-block ;margin-left:15px ;color:red ;text-align:center">
+            <?php
+            try {
+                if (isset($_SESSION['Opp'])) {
+                    echo $_SESSION['Opp'];
+                } else {
+                    throw new Error("Make A Calculation");
+                }
+            } catch (Error $e) {
+                echo $e->getMessage();
+            }
+            ?>
+        </p>
     </form>
 </body>
 </html>
+
 
 
 
