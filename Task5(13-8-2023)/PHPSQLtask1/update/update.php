@@ -23,7 +23,7 @@
             $result = mysqli_query($connection, $select_sql);
             $row = mysqli_fetch_assoc($result);
 
-            echo "<form action='process.php?id=" . $id . "' method='post' class='mt-3'>";
+            echo "<form action='../update/process.php?id=" . $id . "' method='post' class='mt-3'>";
             echo "<div class='form-group'>";
             echo "<label for='productName'>Product Name:</label>";
             echo "<input type='text' class='form-control' id='productName' name='productName' value='" . $row['PRODUCT_NAME'] . "'>";

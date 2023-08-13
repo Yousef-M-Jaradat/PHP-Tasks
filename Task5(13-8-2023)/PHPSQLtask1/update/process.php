@@ -12,7 +12,7 @@ if (isset($_GET['id']) && isset($_POST['submit'])) {
 
     if (mysqli_query($connection, $sql)) {
         echo "Record updated successfully";
-        header("location:http://localhost/conncetsql/select/select.php?");
+        header("location:http://localhost/PHP-Tasks/Task5(13-8-2023)/PHPSQLtask1/select/select.php?");
     } else {
         echo "Error updating record: " . mysqli_error($connection);
     }

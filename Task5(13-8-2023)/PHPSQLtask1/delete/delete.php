@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
     $result = mysqli_query($connection, $delete_sql);
 
     if ($result) {
-        header("Location: http://localhost/conncetsql/select/select.php"); // Redirect back to the main page
+        header("Location: http://localhost/PHP-Tasks/Task5(13-8-2023)/PHPSQLtask1/select/select.php?"); // Redirect back to the main page
     } else {
         echo "Error deleting record: " . mysqli_error($connection);
     }

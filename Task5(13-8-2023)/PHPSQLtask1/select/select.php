@@ -42,8 +42,8 @@ $query = mysqli_query($connection, $sql);
                         echo "<td>" . $row['PRODUCT_NAME'] . "</td>";
                         echo "<td>" . $row['PRODUCT_PRICE'] . "<b>$"."</td>";
                         echo "<td>" . $row['PRODUCT_RATE'] . "<b>/5</b>"."</td>";
-                        echo "<td> <a class='btn btn-primary' href='http://localhost/conncetsql/update/update.php?id=" . $row['ID'] . "'>Update</a></td>";
-                        echo "<td> <a class='btn btn-danger' href='http://localhost/conncetsql/delete/delete.php?id=" . $row['ID'] . "'>Delete</a></td>";
+                        echo "<td> <a class='btn btn-primary' href='../update/update.php?id=" . $row['ID'] . "'>Update</a></td>";
+                        echo "<td> <a class='btn btn-danger' href='../delete/delete.php?id=" . $row['ID'] . "'>Delete</a></td>";
                         echo "</tr>";
                     }
                 } else {
